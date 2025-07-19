@@ -154,12 +154,12 @@ export const CampaignSetup = () => {
                     placeholder="Enter Campaign Name"
                     className="h-12 md:h-16 lg:h-20 rounded-xl border-2 border-gray-200 font-['Montserrat'] text-gray-600 text-sm md:text-base lg:text-lg px-4 md:px-6 py-3 md:py-4 transition-colors"
                     style={{ 
-                      '--tw-ring-color': COLORS.PRIMARY,
+                      '--tw-ring-color': COLORS.HOVER_BORDER,
                       '--tw-border-opacity': '1'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = COLORS.PRIMARY;
-                      e.target.style.boxShadow = `0 0 0 1px ${COLORS.PRIMARY}`;
+                      e.target.style.borderColor = COLORS.HOVER_BORDER;
+                      e.target.style.boxShadow = `0 0 0 1px ${COLORS.HOVER_BORDER}`;
                     }}
                     onBlur={(e) => {
                       e.target.style.borderColor = '#e5e7eb';
@@ -177,12 +177,12 @@ export const CampaignSetup = () => {
                     placeholder="Describe the purpose and goals of this campaign"
                     className="h-32 md:h-40 lg:h-48 rounded-xl border-2 border-gray-200 font-['Montserrat'] text-gray-600 text-sm md:text-base lg:text-lg px-4 md:px-6 py-3 md:py-4 resize-none transition-colors"
                     style={{ 
-                      '--tw-ring-color': COLORS.PRIMARY,
+                      '--tw-ring-color': COLORS.HOVER_BORDER,
                       '--tw-border-opacity': '1'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = COLORS.PRIMARY;
-                      e.target.style.boxShadow = `0 0 0 1px ${COLORS.PRIMARY}`;
+                      e.target.style.borderColor = COLORS.HOVER_BORDER;
+                      e.target.style.boxShadow = `0 0 0 1px ${COLORS.HOVER_BORDER}`;
                     }}
                     onBlur={(e) => {
                       e.target.style.borderColor = '#e5e7eb';
@@ -204,7 +204,7 @@ export const CampaignSetup = () => {
                     {campaignTypes.map((type) => (
                       <div
                         key={type.id}
-                        className="flex items-center space-x-4 w-full sm:w-80 lg:w-96 h-16 md:h-20 rounded-xl border-2 border-gray-200 px-4 md:px-6 py-4 md:py-6 hover:border-purple-300 transition-colors"
+                        className="flex items-center space-x-4 w-full sm:w-80 lg:w-96 h-16 md:h-20 rounded-xl border-2 border-gray-200 px-4 md:px-6 py-4 md:py-6 hover:border-[#B6ADDF] transition-colors"
                       >
                         <RadioGroupItem
                           value={type.id}
@@ -231,12 +231,12 @@ export const CampaignSetup = () => {
                     <SelectTrigger 
                       className="h-12 md:h-16 lg:h-20 rounded-xl border-2 border-gray-200 font-['Montserrat'] text-gray-600 text-sm md:text-base lg:text-lg px-4 md:px-6 transition-colors"
                       style={{ 
-                        '--tw-ring-color': COLORS.PRIMARY,
+                        '--tw-ring-color': COLORS.HOVER_BORDER,
                         '--tw-border-opacity': '1'
                       }}
                       onFocus={(e) => {
-                        e.target.style.borderColor = COLORS.PRIMARY;
-                        e.target.style.boxShadow = `0 0 0 1px ${COLORS.PRIMARY}`;
+                        e.target.style.borderColor = COLORS.HOVER_BORDER;
+                        e.target.style.boxShadow = `0 0 0 1px ${COLORS.HOVER_BORDER}`;
                       }}
                       onBlur={(e) => {
                         e.target.style.borderColor = '#e5e7eb';
@@ -269,12 +269,12 @@ export const CampaignSetup = () => {
                         <SelectTrigger 
                           className="h-12 md:h-16 lg:h-20 rounded-xl border-2 border-gray-200 font-['Montserrat'] text-gray-600 text-sm md:text-base lg:text-lg px-4 md:px-6 transition-colors"
                           style={{ 
-                            '--tw-ring-color': COLORS.PRIMARY,
+                            '--tw-ring-color': COLORS.HOVER_BORDER,
                             '--tw-border-opacity': '1'
                           }}
                           onFocus={(e) => {
-                            e.target.style.borderColor = COLORS.PRIMARY;
-                            e.target.style.boxShadow = `0 0 0 1px ${COLORS.PRIMARY}`;
+                            e.target.style.borderColor = COLORS.HOVER_BORDER;
+                            e.target.style.boxShadow = `0 0 0 1px ${COLORS.HOVER_BORDER}`;
                           }}
                           onBlur={(e) => {
                             e.target.style.borderColor = '#e5e7eb';
@@ -302,12 +302,12 @@ export const CampaignSetup = () => {
                         <SelectTrigger 
                           className="h-12 md:h-16 lg:h-20 rounded-xl border-2 border-gray-200 font-['Montserrat'] text-gray-600 text-sm md:text-base lg:text-lg px-4 md:px-6 transition-colors"
                           style={{ 
-                            '--tw-ring-color': COLORS.PRIMARY,
+                            '--tw-ring-color': COLORS.HOVER_BORDER,
                             '--tw-border-opacity': '1'
                           }}
                           onFocus={(e) => {
-                            e.target.style.borderColor = COLORS.PRIMARY;
-                            e.target.style.boxShadow = `0 0 0 1px ${COLORS.PRIMARY}`;
+                            e.target.style.borderColor = COLORS.HOVER_BORDER;
+                            e.target.style.boxShadow = `0 0 0 1px ${COLORS.HOVER_BORDER}`;
                           }}
                           onBlur={(e) => {
                             e.target.style.borderColor = '#e5e7eb';
@@ -348,7 +348,7 @@ export const CampaignSetup = () => {
                         '--tw-border-opacity': '1'
                       }}
                       onMouseEnter={(e) => {
-                        e.target.style.borderColor = COLORS.PRIMARY;
+                        e.target.style.borderColor = COLORS.HOVER_BORDER;
                       }}
                       onMouseLeave={(e) => {
                         e.target.style.borderColor = '#d1d5db';
@@ -378,12 +378,12 @@ export const CampaignSetup = () => {
                   placeholder="Enter custom FAQs, Call scripts or Conversion flows"
                   className="h-48 md:h-64 lg:h-80 rounded-xl border-2 border-gray-200 font-['Montserrat'] text-gray-600 text-sm md:text-base lg:text-lg px-4 md:px-6 py-3 md:py-4 resize-none transition-colors"
                   style={{ 
-                    '--tw-ring-color': COLORS.PRIMARY,
+                    '--tw-ring-color': COLORS.HOVER_BORDER,
                     '--tw-border-opacity': '1'
                   }}
                   onFocus={(e) => {
-                    e.target.style.borderColor = COLORS.PRIMARY;
-                    e.target.style.boxShadow = `0 0 0 1px ${COLORS.PRIMARY}`;
+                    e.target.style.borderColor = COLORS.HOVER_BORDER;
+                    e.target.style.boxShadow = `0 0 0 1px ${COLORS.HOVER_BORDER}`;
                   }}
                   onBlur={(e) => {
                     e.target.style.borderColor = '#e5e7eb';
@@ -410,7 +410,7 @@ export const CampaignSetup = () => {
                         '--tw-border-opacity': '1'
                       }}
                       onMouseEnter={(e) => {
-                        e.target.style.borderColor = COLORS.PRIMARY;
+                        e.target.style.borderColor = COLORS.HOVER_BORDER;
                       }}
                       onMouseLeave={(e) => {
                         e.target.style.borderColor = '#d1d5db';
@@ -468,12 +468,12 @@ export const CampaignSetup = () => {
                       <SelectTrigger 
                         className="h-12 md:h-16 lg:h-20 rounded-xl border-2 border-gray-200 font-['Montserrat'] text-gray-600 text-sm md:text-base lg:text-lg pl-12 md:pl-16 pr-4 md:pr-8 transition-colors"
                         style={{ 
-                          '--tw-ring-color': COLORS.PRIMARY,
+                          '--tw-ring-color': COLORS.HOVER_BORDER,
                           '--tw-border-opacity': '1'
                         }}
                         onFocus={(e) => {
-                          e.target.style.borderColor = COLORS.PRIMARY;
-                          e.target.style.boxShadow = `0 0 0 1px ${COLORS.PRIMARY}`;
+                          e.target.style.borderColor = COLORS.HOVER_BORDER;
+                          e.target.style.boxShadow = `0 0 0 1px ${COLORS.HOVER_BORDER}`;
                         }}
                         onBlur={(e) => {
                           e.target.style.borderColor = '#e5e7eb';
@@ -502,12 +502,12 @@ export const CampaignSetup = () => {
                       <SelectTrigger 
                         className="h-12 md:h-16 lg:h-20 rounded-xl border-2 border-gray-200 font-['Montserrat'] text-gray-600 text-sm md:text-base lg:text-lg pl-12 md:pl-16 pr-4 md:pr-8 transition-colors"
                         style={{ 
-                          '--tw-ring-color': COLORS.PRIMARY,
+                          '--tw-ring-color': COLORS.HOVER_BORDER,
                           '--tw-border-opacity': '1'
                         }}
                         onFocus={(e) => {
-                          e.target.style.borderColor = COLORS.PRIMARY;
-                          e.target.style.boxShadow = `0 0 0 1px ${COLORS.PRIMARY}`;
+                          e.target.style.borderColor = COLORS.HOVER_BORDER;
+                          e.target.style.boxShadow = `0 0 0 1px ${COLORS.HOVER_BORDER}`;
                         }}
                         onBlur={(e) => {
                           e.target.style.borderColor = '#e5e7eb';

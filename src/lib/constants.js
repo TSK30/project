@@ -7,5 +7,6 @@ export const COLORS = {
   BUTTON_GRADIENT_LAUNCH: 'linear-gradient(to right, #231955, #9288BE)',
   PRIMARY100: '#B6ADDF',
   DARK_GRAY: "#545454",
+  HOVER_BORDER: '#B6ADDF',
   // Add more color constants as needed
 }; 
