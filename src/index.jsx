@@ -1,9 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { CampaignSetup } from "./screens/CampaignSetup";
+import { App } from "./App";
 
 createRoot(document.getElementById("app")).render(
   <StrictMode>
-    <CampaignSetup />
+    <App />
   </StrictMode>,
 );

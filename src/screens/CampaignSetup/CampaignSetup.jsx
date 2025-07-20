@@ -28,17 +28,23 @@ import { Tabs, TabsList, TabsTrigger } from "../../components/ui/tabs";
 import { Textarea } from "../../components/ui/textarea";
 import { COLORS } from "../../lib/constants";
 
-export const CampaignSetup = () => {
+export const CampaignSetup = ({ onNavigate }) => {
   const [selectedCampaignType, setSelectedCampaignType] = useState("inbound");
 
   // Navigation items data with Lucide icons
   const navItems = [
-    { name: "Dashboard", icon: BarChart3, active: false },
-    { name: "Campaigns", icon: Phone, active: true },
-    { name: "Call logs", icon: FileText, active: false },
-    { name: "Knowledge bases", icon: Database, active: false },
-    { name: "Settings", icon: Settings, active: false },
+    { name: "Dashboard", icon: BarChart3, active: false, screen: "dashboard" },
+    { name: "Campaigns", icon: Phone, active: true, screen: "campaigns" },
+    { name: "Call logs", icon: FileText, active: false, screen: "call-logs" },
+    { name: "Knowledge bases", icon: Database, active: false, screen: "knowledge-bases" },
+    { name: "Settings", icon: Settings, active: false, screen: "settings" },
   ];
+
+  const handleNavigation = (screen) => {
+    if (onNavigate) {
+      onNavigate(screen);
+    }
+  };
 
   // Campaign type options
   const campaignTypes = [
@@ -111,6 +117,7 @@ export const CampaignSetup = () => {
                         className={`flex items-center w-full p-3 md:p-4 rounded-lg transition-all duration-200 cursor-pointer hover:bg-white/70 ${
                           item.active ? "bg-white shadow-sm" : ""
                         }`}
+                        onClick={() => handleNavigation(item.screen)}
                       >
                         <IconComponent
                           className={`w-5 h-5 mr-3 ${
